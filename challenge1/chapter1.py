@@ -1,4 +1,4 @@
-### Cha[ter ! Challenge] ###
+### Chapter 1 Challenge ###
 import datetime
 
 # Getting user input
