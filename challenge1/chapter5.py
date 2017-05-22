@@ -14,6 +14,4 @@ import random
 c = random.sample(range(1, 100), 15)
 d = random.sample(range(1, 100), 20)
 
-
-
 print(set(c) & set(d))
