@@ -14,7 +14,7 @@ else:
 num = int(input('Give me a first number: '))
 check = int(input('Give me a second number: '))
 
-if(check % num == 0):
-    print('The number %s divides evenly into %s.' % (check, num))
+if(num % check == 0):
+    print('%s divides evenly by %s.' % (num, check))
 else:
     print('The numbers you have provided don\'t return even result.')
