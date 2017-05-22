@@ -1,4 +1,4 @@
-### Chapter 6 Challenge ###
+### Chapter 7 Challenge ###
 
 a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
@@ -12,3 +12,4 @@ print(even_numbers)
 
 ### Quicker example ###
 
+# No quicker examples for this challenge
