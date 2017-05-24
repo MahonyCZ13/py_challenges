@@ -7,7 +7,17 @@ print(set(a) & set(b))
 
 ### Extras ###
 
-# No extras for this challenge
+# Generate two lists and compare them
+
+import random
+
+c = random.sample(range(1, 50), 15)
+d = random.sample(range(1, 50), 15)
+
+# Another way of solving this without sets
+result = [i for i in c if i in d]
+
+print(result)
 
 ### Quicker example ###
 
