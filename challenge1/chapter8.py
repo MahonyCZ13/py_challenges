@@ -7,7 +7,6 @@ while True:
     elif(usr_cmd == 'start'):
         user1 = int(input('Player 1: Rock paper or scissors?: '))
         user2 = int(input('Player 2: Rock paper or scissors?: '))
-        # print('These are the inputs from Player 1: %s and Player 2: %s.' % (user1, user2))
 
         result = [" ", "rock", "paper", "scissors"]
 
