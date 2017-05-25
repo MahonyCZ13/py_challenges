@@ -16,10 +16,13 @@ def create_list():
     base_list = [5, 10, 15, 20, 25]
     new_list = []
 
-    new_list.insert(0, base_list.pop(0))
-    new_list.append(base_list.pop())
+    if len(base_list) < 2:
+        print('The is not enough elements to work on...')
+    else:
+        new_list.insert(0, base_list.pop(0))
+        new_list.append(base_list.pop())
 
-    print('%s -> %s' % (base_list, new_list))
+        print('%s -> %s' % (base_list, new_list))
 
 create_list()
 
