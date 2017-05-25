@@ -1,28 +1,31 @@
 ### Chapter 1 Challenge ###
+'''
+Tells the user, in what year he or she will reach 100 years.
+'''
 import datetime
 
 # Getting user input
-name = input('What is your name?: ')
-age = int(input('Tell me your age: '))
+NAME = input('What is your name?: ')
+AGE = int(input('Tell me your age: '))
 
 #Get Date and Year
-get_date = datetime.datetime.now()
-current_year = get_date.year
+GET_DATE = datetime.datetime.now()
+CURRENT_YEAR = GET_DATE.year
 
 # Calculate result
-result = (current_year - age) + 100
+RESULT = (CURRENT_YEAR - AGE) + 100
 
 # Compile message to user
-msg = 'Hello there %s, you will reach 100 years in %s \n' % (name, result)
+MSG = 'Hello there %s, you will reach 100 years in %s \n' % (NAME, RESULT)
 
 # Print it to user
-print(msg)
+print(MSG)
 
 ### Extras ###
 
 # Print the message x times based on user input and on the new line
-userInput = input('How many times you want me to print above message?: ')
+USER_INPUT = input('How many times you want me to print above message?: ')
 
-multi = int(userInput)
+MULTI = int(USER_INPUT)
 
-print(msg * multi)
+print(MSG * MULTI)

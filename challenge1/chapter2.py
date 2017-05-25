@@ -1,20 +1,22 @@
 ### Chapter 2 Challenge ###
+'''
+Check, if the number is even and multiple of 4.
+'''
+USER_NUMBER = int(input('Give me a number: '))
 
-user_number = int(input('Give me a number: '))
-
-if(user_number % 4 == 0):
+if USER_NUMBER % 4 == 0:
     print('The number is even and is multiple of 4.')
-elif(user_number % 2 == 0):
+elif USER_NUMBER % 2 == 0:
     print('The number is even.')
 else:
     print('The number is odd')
 
 ### Extras ###
 
-num = int(input('Give me a first number: '))
-check = int(input('Give me a second number: '))
+NUM = int(input('Give me a first number: '))
+CHECK = int(input('Give me a second number: '))
 
-if(num % check == 0):
-    print('%s divides evenly by %s.' % (num, check))
+if NUM % CHECK == 0:
+    print('%s divides evenly by %s.' % (NUM, CHECK))
 else:
     print('The numbers you have provided don\'t return even result.')

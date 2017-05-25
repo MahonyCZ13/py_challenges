@@ -1,29 +1,32 @@
 ### Chapter 6 Challenge ###
+'''
+Check the user inputed string for palindrom.
+'''
 
-string = input('Type a workd and I tell if it\'s palindrom or not: ')
+STRING = input('Type a word and I tell if it\'s palindrom or not: ')
 
 # Create list for user inputed string
-pali = []
+PALI = []
 
 # Create list for reversed string
-rev_pali =[]
+REV_PALI = []
 
 # Parse user inputed string into a list
-for i in string:
-    pali.append(i)
+for i in STRING:
+    PALI.append(i)
 
 # Reverse order of the list
-for i in reversed(pali):
-    rev_pali.append(i)
+for i in reversed(PALI):
+    REV_PALI.append(i)
 
 # Join the reversed list into a string
-string2 = ''.join(rev_pali)
+STRING2 = ''.join(REV_PALI)
 
 # Compare user inputed string with reversed string
-if(string == string2):
-    print('This is a palindrom!: %s = %s' % (string, string2))
+if STRING == STRING2:
+    print('This is a palindrom!: %s = %s' % (STRING, STRING2))
 else:
-    print('This is not a palindrom: %s != %s' % (string, string2))
+    print('This is not a palindrom: %s != %s' % (STRING, STRING2))
 
 ### Extras ###
 
@@ -31,15 +34,15 @@ else:
 
 ### Quicker example ###
 
-string3 = input('Give me a another word: ')
+STRING3 = input('Give me a another word: ')
 
-string3 = str(string3)
+STRING3 = str(STRING3)
 
-rvs = string3[::-1]
+RVS = STRING3[::-1]
 
-print(rvs)
+print(RVS)
 
-if (string3 == rvs):
+if STRING3 == RVS:
     print('Palindrom!')
 else:
     print('Not a palindrom...')

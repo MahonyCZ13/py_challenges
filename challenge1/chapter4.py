@@ -1,18 +1,20 @@
 ### Chapter 4 Challenge ###
-
+'''
+Inputed value from user is chaked for even divisors.
+'''
 # Create list
 
-num = int(input('Give me a number: '))
+NUM = int(input('Give me a number: '))
 
-a = range(1, 100)
+A = range(1, 100)
 
-div_list = []
+DIV_LIST = []
 
-for i in a:
-    if i % num == 0:
-        div_list.append(i)
+for i in A:
+    if i % NUM == 0:
+        DIV_LIST.append(i)
 
-print(div_list)
+print(DIV_LIST)
 
 ### Extras ###
 

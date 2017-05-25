@@ -1,24 +1,29 @@
 ### Chapter 9 Challenge ###
+'''
+Guesser game with a computer.
+'''
 
 import random
 
 i = 1
-running = True
+RUNNING = True
 
-while running:
+while RUNNING:
     i += 1
-    user  = input('Guess a number from 1 to 5! (or type \'q\' to quit): ')
-    if(user == 'q'):
-        print('You have played %s games.' % i)
-        running = False
-    else:
-        user = int(user)
-        gen = random.randint(1,5)
 
-        if(user == gen):
-            print('Yes!! It\'s a match! The computer thought %s and you guessed %s.' % (gen, user))
+    USER = input('Guess a number from 1 to 5! (or type \'q\' to quit): ')
+
+    if USER == 'q':
+        print('You have played %s games.' % i)
+        RUNNING = False
+    else:
+        USER = int(USER)
+        GEN = random.randint(1, 5)
+
+        if USER == GEN:
+            print('Yes!! It\'s a match! The computer thought %s and you guessed %s.' % (GEN, USER))
         else:
-            print('Sadly, wrong. Computer thought %s and you guessed %s.' % (gen, user))
+            print('Sadly, wrong. Computer thought %s and you guessed %s.' % (GEN, USER))
 
 
 ### Extras ###

@@ -1,17 +1,19 @@
 ### Chapter 3 Challenge ###
+'''
+Lists numbers less than inputed value.
+'''
+A = [11, 21, 2, 3, 5, 8, 13, 21, 34, 55, 89, 1, 5, 4, 2]
 
-a = [11, 21, 2, 3, 5, 8, 13, 21, 34, 55, 89, 1, 5, 4, 2]
+B = []
 
-a2 = []
-
-for i in a:
+for i in A:
     if i < 5:
-        a2.append(i)
+        B.append(i)
 
-print(sorted(a2))
+print(sorted(B))
 
 ### Extras ###
 
-num = int(input('I will list numbers less than: '))
-a3 = [i for i in a if i < num]
-print(a3)
+NUM = int(input('I will list numbers less than: '))
+C = [i for i in A if i < NUM]
+print(C)

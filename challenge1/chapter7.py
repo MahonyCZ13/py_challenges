@@ -1,10 +1,12 @@
 ### Chapter 7 Challenge ###
+'''
+Check list for even numbers.
+'''
+A = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
-a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+EVEN_NUMBERS = [i for i in A if i % 2 == 0]
 
-even_numbers = [i for i in a if i % 2 == 0]
-
-print(even_numbers)
+print(EVEN_NUMBERS)
 
 ### Extras ###
 
