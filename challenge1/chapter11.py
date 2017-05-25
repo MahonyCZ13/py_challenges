@@ -30,4 +30,17 @@ prime_checker(get_number())
 
 ### Quicker example ###
 
-# No quicker examples for this challenge
+num2 = int(input('Insert a number: '))
+
+a = [x for x in range(2, num2) if num2 % x == 0]
+
+def is_prime(n):
+    if num2 > 1:
+        if len(a) == 0:
+            print('This prime number!')
+        else:
+            print('Not prime!')
+    else:
+        print('not prime!')
+
+is_prime(num2)
