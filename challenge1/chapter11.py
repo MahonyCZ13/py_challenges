@@ -35,12 +35,12 @@ num2 = int(input('Insert a number: '))
 a = [x for x in range(2, num2) if num2 % x == 0]
 
 def is_prime(n):
-    if num2 > 1:
+    if n > 1:
         if len(a) == 0:
-            print('This prime number!')
+            print('This is a prime number!')
         else:
             print('Not prime!')
     else:
-        print('not prime!')
+        print('Not Prime!')
 
 is_prime(num2)
