@@ -34,6 +34,7 @@ def prime_checker(num):
     while i <= (math.sqrt(num)):
         if num % i == 0:
             list_div.append(i)
+
         i += 1
 
     if len(list_div) == 1:
