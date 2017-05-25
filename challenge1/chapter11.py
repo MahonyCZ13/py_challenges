@@ -54,7 +54,7 @@ USER_INPUT = int(input('Insert a number: '))
 A = [x for x in range(2, USER_INPUT) if USER_INPUT % x == 0]
 
 def is_prime(num):
-    '''(number) -> number
+    '''(int) -> str
 
     Return result, if supplied number is a prime number
 
