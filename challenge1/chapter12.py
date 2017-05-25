@@ -32,4 +32,12 @@ create_list()
 
 ### Quicker example ###
 
-# No quicker examples for this challenge
+A = [5, 10, 15, 20, 25]
+
+def second_way(lst):
+    '''
+    Second way of the function creat_list()
+    '''
+    return [lst[0], lst[-1]]
+
+print(second_way(A))
