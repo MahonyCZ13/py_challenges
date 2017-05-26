@@ -1,6 +1,6 @@
 ### Chapter 13 Challenge ###
 '''
-To be added soon enough.
+To be added.
 '''
 
 
