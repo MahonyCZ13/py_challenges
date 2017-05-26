@@ -6,7 +6,7 @@ def get_number():
     '''(int) -> int
     Gets useri input in form of int.
     '''
-    num = int(input('Ho many Fibonacci numbers you want me to generate? > '))
+    num = int(input('How many Fibonacci numbers you want me to generate? > '))
     return num
 
 def calculate(num):
@@ -18,18 +18,14 @@ def calculate(num):
     >>> calculate(7)
     1, 1, 2, 3, 5, 8, 13
     '''
-    fib_list = []
-    i = 1
-    j = 0
+    fib_list = [0, 1]
+    i = 0
     while i <= num:
-        if(len(fib_list) == 0):
-            result = j + 1
-        else:
-            result = fib_list[-1] + j
+        result = fib_list[-1] + fib_list[-2]
         fib_list.append(result)
         i += 1
-        j += result
-    print(fib_list)
+
+    print(fib_list[:num])
 
 calculate(get_number())
 ### Extras ###
