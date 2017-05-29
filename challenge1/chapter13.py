@@ -2,21 +2,29 @@
 '''
 To be added.
 '''
+
+import sys
+
 def get_number():
     '''(int) -> int
-    Gets useri input in form of int.
+    Gets user input in form of int.
     '''
-    num = int(input('How many Fibonacci numbers you want me to generate? > '))
-    return num
+    try:
+        num = int(input('How many Fibonacci numbers you want me to generate? > '))
+        return num
+    except ValueError:
+        print('This is not a number!')
+        sys.exit()
+
 
 def calculate(num):
     '''(int) -> int
     Generate Fibonacci sequence from inputed value.
 
     >>> calculate(3)
-    1, 1, 2
+    [1, 1, 2]
     >>> calculate(7)
-    1, 1, 2, 3, 5, 8, 13
+    [1, 1, 2, 3, 5, 8, 13]
     '''
     fib_list = [0, 1]
     i = 0
