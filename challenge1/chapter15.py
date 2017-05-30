@@ -4,9 +4,18 @@ Reverse word order.
 '''
 
 def string_reverse():
-    user = input('Give me a string and i will reverse it > ')
-    print(str(reversed(user)))
+    '''(str) -> str
 
+    Reverses word order inputed by user.
+
+    >>> string_reverse('Hello there user')
+    user there Hello
+    >>> string('Are you alien?')
+    ? alien you Are
+    '''
+    user = input('Give me a string and i will reverse it > ')
+    result = str.split(user)
+    print(result)
 string_reverse()
 
 ### Extras ###
