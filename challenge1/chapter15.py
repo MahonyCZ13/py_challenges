@@ -1,6 +1,6 @@
 ### Chapter 15 Challenge ###
 '''
-Reverse word order.
+If user supplies a string this script will reverse its order.
 '''
 
 def string_reverse():
