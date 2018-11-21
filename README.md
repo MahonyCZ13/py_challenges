@@ -1,6 +1,8 @@
-# py_challenges
-Python challenges from all over the internet  
+# Python Challenges Learning Repository
+
+Python challenges from all over the internet with solutions
 
 ## Challenges
 
-* Folder Challenge 1 - [Practice python](http://www.practicepython.org/)
+* Folder practice_python - [Practice python](http://www.practicepython.org/)
+* Folder python_challenge - [Python Challenge](http://www.pythonchallenge.com)
